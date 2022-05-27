@@ -58,5 +58,5 @@ app.use(express.static('public'));
 app.use(userRoutes);
 
 app.listen(process.env.PORT, ()=> {
-    console.log('Server is started');
+    console.log('Server is started on https://localhost:'+process.env.PORT);
 });
