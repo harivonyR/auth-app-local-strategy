@@ -152,7 +152,7 @@ router.post('/forgot', (req, res, next)=> {
 
             let mailOptions = {
                 to: user.email,
-                from : 'Ghulam Abbas myapkforest@gmail.com',
+                from : 'Harivony RATEFIARISON myapkforest@gmail.com',
                 subject : 'Recovery Email from Auth Project',
                 text : 'Please click the following link to recover your passoword: \n\n'+
                         'http://'+ req.headers.host +'/reset/'+token+'\n\n'+
@@ -211,7 +211,7 @@ router.post('/reset/:token', (req, res)=>{
 
             let mailOptions = {
                 to : user.email,
-                from : 'Ghulam Abbas myapkforest@gmail.com',
+                from : 'Harivony RATEFIARISON myapkforest@gmail.com',
                 subject : 'Your password is changed',
                 text: 'Hello, '+user.name+'\n\n'+
                       'This is the confirmation that the password for your account '+ user.email+' has been changed.'
